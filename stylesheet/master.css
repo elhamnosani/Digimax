@@ -300,9 +300,10 @@ header{
     padding: 5px 9%;
     justify-content: space-between;
     >div{
-        width: 49%;
+        width: 50%;
         min-height: 500px;
         &:first-of-type{
+          width: 55%;
             >figure{
                 padding: 10px;
                 border: 1px solid rgba(255, 255, 255, 0.249);
@@ -338,6 +339,7 @@ header{
             }
         }
         &:last-of-type{
+          width: 44%;
             /* border: 1px solid white; */
             padding: 10px 50px;
             >span, h2, p, a{
