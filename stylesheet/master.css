@@ -69,6 +69,9 @@ header{
                         font-weight: 800;
                         text-transform: capitalize;
                         font-size: 15px;
+                        &:hover{
+                            color: var(--primaryColor);
+                        }
                         >i{
                         margin-left: 10px;
                         font-weight: 800;
@@ -80,11 +83,7 @@ header{
                         &:hover{
                             >ul{
                                 opacity: 1;
-                                visibility: visible;
-                            }
-                            >a{
-                                color: var(--primaryColor);
-                                }
+                                visibility: visible;                        
                         }
                         >ul{
                             z-index: 1;
