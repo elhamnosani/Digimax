@@ -85,6 +85,7 @@ header{
                                 opacity: 1;
                                 visibility: visible;                        
                         }
+                        }
                         >ul{
                             z-index: 1;
                             position: absolute;
