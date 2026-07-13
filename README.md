@@ -48,14 +48,6 @@ A modern and responsive digital agency landing page built with **HTML5** and **C
 - CSS Grid
 ---
 
-## 📸 Preview
-
-![Preview](preview.png)
-
-> Replace `preview.png` with your project screenshot.
-
----
-
 ## 💡 What I Practiced
 
 - Semantic HTML
