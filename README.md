@@ -15,11 +15,15 @@ A modern and responsive digital agency landing page built with **HTML5** and **C
 
 ---
 ## 📸 Preview
-
+| Preview | Preview |
+|---------|---------|
+| ![](img/preview1.png) | ![](img/preview2.png) |
+| ![](img/preview3.png) | ![](img/preview4.png) |
+<!--
 ![Preview](preview1.png)
 ![Preview](preview2.png)
 ![Preview](preview3.png)
-
+-->
 > Replace `preview.png` with your project screenshot.
 
 ---
