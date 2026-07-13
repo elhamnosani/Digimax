@@ -7,7 +7,20 @@ A modern and responsive digital agency landing page built with **HTML5** and **C
 🔗 https://elhamnosani.github.io/Digimax/
 
 ---
+## 🎥 Live Preview
 
+<p align="center">
+  <img src="preview.gif" alt="DigiMax Preview" width="100%">
+</p>
+
+---
+## 📸 Preview
+
+![Preview](preview.png)
+
+> Replace `preview.png` with your project screenshot.
+
+---
 ## 📌 Features
 
 - Modern and clean landing page
@@ -32,23 +45,6 @@ A modern and responsive digital agency landing page built with **HTML5** and **C
 - Flexbox
 - CSS Grid
 ---
-
-## 📂 Project Structure
-
-```text
-Digimax/
-│
-├── index.html
-├── css/
-│   └── style.css
-├── images/
-├── fonts/
-└── README.md
-```
-
----
-
-
 
 ## 📸 Preview
 
