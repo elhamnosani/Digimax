@@ -1383,3 +1383,82 @@ header{
         }
     }
 }
+footer{
+    padding: 50px 9%;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, #ffffff00, #e0e0e024, #ffffff00 ) 1;
+    >div{
+        width: 20%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        color: white;
+        &:nth-of-type(1){
+            width: 30%;
+            >img{
+                width: 120px;
+                object-fit: contain;
+            }
+            >p{
+                color: #9b96b0;
+            }
+        }
+        &:nth-of-type(2){
+            >h4{
+                width: 100%;
+            }
+            >ul{
+                >li{
+                    >a{
+                        color: #9b96b0;
+                        font-size: 14px;
+                        line-height: 25px;
+                        transition: .5s;
+                        &:hover{
+                            color: var(--primaryColor);
+                        }
+                    }
+                }
+            }
+        }
+        &:nth-of-type(3){
+            >h4{
+                width: 100%;
+            }
+            >ul{
+                >li{
+                    >a{
+                        color: #9b96b0;
+                        font-size: 14px;
+                        line-height: 25px;
+                        transition: .5s;
+                        &:hover{
+                            color: var(--primaryColor);
+                        }
+                    }
+                }
+            }
+        }
+        &:nth-of-type(4){
+            >h4{
+                width: 100%;
+            }
+            >ul{
+                >li{
+                    >a{
+                        color: #9b96b0;
+                        font-size: 14px;
+                        line-height: 25px;
+                        transition: .5s;
+                        &:hover{
+                            color: var(--primaryColor);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
