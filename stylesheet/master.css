@@ -1462,3 +1462,146 @@ footer{
     }
 
 }
+.modern-footer {
+    background-color: #0a0e17;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl;
+}
+.profile-wrapper {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 35px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* باکس مهارکننده سایز عکس */
+.photo-container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    z-index: 5;
+}
+
+/* فیت شدن کامل عکس بزرگ در دایره */
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ==================== انیمیشن دائمی مدار (بدون نیاز به هوور) ==================== */
+
+.solar-orbit {
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    border: 1px dashed rgba(255, 255, 255, 0.2); /* خط‌چین مدار */
+    border-radius: 50%;
+    z-index: 2;
+    transform: rotate(0deg);
+    
+    /* انیمیشن چرخش مداوم به محض لود شدن صفحه (زمان: ۱6 ثانیه) */
+    animation: orbit-spin 16s linear infinite;
+}
+
+/* استایل پایه آیکون‌ها و فعال‌سازی انیمیشن معکوس دائمی */
+.orbit-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #161b22;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+
+    /* انیمیشن معکوس برای صاف ماندن لوگوها در طول چرخش */
+    animation: icon-reverse-spin 16s linear infinite;
+}
+
+/* چیدن آیکون‌ها روی نقاط مختلف مدار */
+.linkedin {
+    top: -20px;
+    left: calc(50% - 20px);
+}
+
+.github {
+    bottom: 10px;
+    left: -10px;
+}
+
+.instagram {
+    bottom: 10px;
+    right: -10px;
+}
+
+/* ==================== تعاملات هنگام هوور روی آیکون‌ها ==================== */
+
+/* متوقف شدن چرخش منظومه وقتی کاربر ماوس را روی یک آیکون می‌برد تا راحت کلیک کند */
+.solar-orbit:hover, 
+.solar-orbit:hover .orbit-icon {
+    animation-play-state: paused !important;
+}
+
+/* بزرگ شدن آیکون زیر ماوس */
+.orbit-icon:hover {
+    transform: scale(1.25) !important;
+}
+
+/* رنگ و درخشش نئونی مخصوص هر شبکه اجتماعی */
+.linkedin:hover { 
+    background-color: #0077b5; 
+    box-shadow: 0 0 20px #0077b5; 
+}
+.github:hover { 
+    background-color: #24292e; 
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6); 
+}
+.instagram:hover { 
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    box-shadow: 0 0 20px #dc2743; 
+}
+
+/* استایل متون */
+.profile-info h3 { 
+    margin-top: 80px;
+    color: #fff; 
+    margin-bottom: 10px; 
+    font-size: 18px;
+    text-align: center;
+}
+.profile-info p { 
+    color: #8b949e; 
+    font-size: 13px; 
+    line-height: 1.6; 
+    text-align: center;
+}
+
+/* ==================== کدهای فریم انیمیشن (Keyframes) ==================== */
+
+/* چرخش ساعتگرد مدار */
+@keyframes orbit-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* چرخش پادساعتگرد آیکون‌ها برای خنثی کردن زاویه */
+@keyframes icon-reverse-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
+}
