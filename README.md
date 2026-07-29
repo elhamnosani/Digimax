@@ -23,6 +23,9 @@ A modern and responsive digital agency landing page built with **HTML5** and **C
 ![Preview](preview1.png)
 ![Preview](preview2.png)
 ![Preview](preview3.png)
+![Preview](preview4.png)
+![Preview](preview5.png)
+![Preview](preview6.png)
 -->
 > Replace `preview.png` with your project screenshot.
 
